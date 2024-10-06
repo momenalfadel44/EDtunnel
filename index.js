@@ -5,7 +5,7 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = '86534882-2300-444d-bf4f-695623dc1e22';
 
-const proxyIPs = ['172.67.218.198:443', '172.67.218.198:443'];
+const proxyIPs = ['proxyip.digitalocean.fxxk.dedyn.io'];
 
 // if you want to use ipv6 or single proxyIP, please add comment at this line and remove comment at the next line
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
@@ -15,9 +15,9 @@ let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 let proxyPort = proxyIP.includes(':') ? proxyIP.split(':')[1] : '443';
 
 // use single proxyip instead of random
-// let proxyIP = 'cdn.xn--b6gac.eu.org';
+// let proxyIP = 'proxyip.digitalocean.fxxk.dedyn.io';
 // ipv6 proxyIP example remove comment to use
-// let proxyIP = "[2a01:4f8:c2c:123f:64:5:6810:c55a]"
+// let proxyIP = "proxyip.digitalocean.fxxk.dedyn.io"
 
 // Example:  user:pass@host:port  or  host:port
 let socks5Address = '';
